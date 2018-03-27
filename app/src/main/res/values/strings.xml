@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WaterApplication</string>
+    <string-array name="Metrics">
+        <item>kg</item>
+        <item>lbs</item>
+    </string-array>
 </resources>
