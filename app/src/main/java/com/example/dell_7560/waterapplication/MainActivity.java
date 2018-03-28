@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Spinner spinner=findViewById(R.id.id_spinner1);
 
-        ArrayAdapter<TextView> adapter =ArrayAdapter.createFromResource(this,R.array.);
+//        ArrayAdapter<TextView> adapter =ArrayAdapter.createFromResource(this,);
         //setting the new text view to the array adapter
 
-        spinner.setAdapter(adapter);
+//        spinner.setAdapter(adapter);
     }
 }
