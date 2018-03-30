@@ -1,27 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_columnSpan="1"
+    android:layout_rowSpan="1"
+    android:background="@color/backgroundColor"
+    android:padding="25dp">
     <ImageButton
+        android:clickable="true"
         android:id="@+id/id_myinfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/image_info"/>
-    <ImageButton
-        android:id="@+id/id_waterConsumption"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/image_water"/>
-    <ImageButton
-        android:src="@drawable/image_graph"
-        android:id="@+id/id_analysis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <ImageButton
-        android:src="@drawable/image_clock"
-        android:id="@+id/id_reminder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_column="0"
+        android:layout_margin="30dp"
+        android:layout_row="0"
+        android:background="@color/backgroundColor"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_info" />
 
-</LinearLayout>
+    <ImageButton
+        android:clickable="true"
+        android:id="@+id/id_waterConsumption"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_column="1"
+        android:layout_margin="30dp"
+        android:layout_row="0"
+        android:background="@color/backgroundColor"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_water" />
+
+    <ImageButton
+        android:clickable="true"
+        android:id="@+id/id_analysis"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_column="0"
+        android:layout_margin="30dp"
+        android:layout_row="1"
+        android:background="@color/backgroundColor"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_graph" />
+
+    <ImageButton
+        android:clickable="true"
+        android:id="@+id/id_reminder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_column="1"
+        android:layout_margin="30dp"
+        android:layout_row="1"
+        android:adjustViewBounds="true"
+        android:background="@color/backgroundColor"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_clock" />
+
+
+</GridLayout>

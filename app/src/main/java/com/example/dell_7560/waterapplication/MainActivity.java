@@ -1,22 +1,25 @@
 package com.example.dell_7560.waterapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+    Intent intent;
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Spinner spinner=findViewById(R.id.id_spinner1);
+        button=findViewById(R.id.button);//save button
+        button.setOnClickListener(this);//assigning onclick event
+    }
 
-//        ArrayAdapter<TextView> adapter =ArrayAdapter.createFromResource(this,);
-        //setting the new text view to the array adapter
-
-//        spinner.setAdapter(adapter);
+    @Override
+    public void onClick(View view) {
+        intent=new Intent(MainActivity.this,DefaultPage.class);
+        startActivity(intent);
     }
 }

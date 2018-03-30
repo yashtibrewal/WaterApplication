@@ -6,13 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.dell_7560.waterapplication.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textSize="35dp"
+            android:text="Hello!"
+            android:layout_gravity="center"
+            android:layout_margin="10px"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter Name"
             android:textSize="25dp"
-            android:paddingTop="50dp"
             android:layout_gravity="center"/>
         <EditText
             android:paddingTop="10dp"
@@ -24,7 +31,7 @@
             android:layout_gravity="center"
             android:width="100dp"/>
         <TextView
-            android:paddingTop="50dp"
+            android:paddingTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter Weight"
@@ -38,10 +45,6 @@
             android:textSize="25dp"
             android:fontFamily="casual"
             android:layout_gravity="center"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="50dp"/>
         <Spinner
             android:id="@+id/id_spinner1"
             android:minWidth="75dp"
@@ -50,6 +53,13 @@
             android:entries="@array/Metrics"
             android:layout_gravity="center"
             />
-
+    <Button
+        android:id="@+id/button"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="SAVE"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

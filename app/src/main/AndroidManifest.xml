@@ -10,14 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DefaultPage">
+
+        </activity>
+        <activity android:name=".WaterPage"></activity>
+        <activity android:name=".Reminder"></activity>
+        <activity android:name=".MyInformation"></activity>
+        <activity android:name=".Report"></activity>
     </application>
 
 </manifest>
