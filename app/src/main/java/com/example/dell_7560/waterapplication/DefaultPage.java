@@ -5,15 +5,21 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class DefaultPage extends AppCompatActivity implements View.OnClickListener{
     ImageButton imageButton_Water,imageButton_Reminder,imageButton_Analysis,imageButton_Myinfo;
     Intent intent;
-
+    TextView welcomeMessage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //create a database reference
+        //query for the name
+        //store the query in a variable
+
 
         //setting the xml view
         setContentView(R.layout.defaut_page);
@@ -28,6 +34,13 @@ public class DefaultPage extends AppCompatActivity implements View.OnClickListen
         imageButton_Water.setOnClickListener(this);
         imageButton_Reminder.setOnClickListener(this);
         imageButton_Myinfo.setOnClickListener(this);
+
+        //linking text views
+        welcomeMessage=findViewById(R.id.id_welcome);
+
+
+
+        //assign the name to text view
     }
 
     @Override
