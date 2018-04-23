@@ -44,7 +44,8 @@
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:fontFamily="casual"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:inputType="number"/>
         <Spinner
             android:id="@+id/id_spinner1"
             android:minWidth="75dp"
